@@ -1,0 +1,234 @@
+/**
+ *leepom 2018.9.30
+ *
+*/
+
+/*公共样式*/
+header a,
+header span{
+    color: #777;
+    text-decoration: none;
+}
+
+/*字体图标*/
+@font-face {
+    font-family: leepom;
+    src: url('../fonts/MiFie-Web-Font.eot?6cyhth');
+    src: url('../fonts/MiFie-Web-Font.eot?6cyhth#iefix') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg?6cyhth#MiFie-Web-Font') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf?6cyhth') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff?6cyhth') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+[class *= " icon-"],
+[class ^= "icon-"]{
+    font-family: leepom;
+    font-style: normal;
+
+}
+
+/*导航区域*/
+header > .topbar{
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 40px;
+    font-size:10px;
+}
+
+header > .topbar >.container >.row > div + div{
+    border-left: 1px solid #e0e0e0;
+}
+
+.icon-phone::before{
+    font-size: 13px;
+    content: '\e908';
+}
+
+.icon-call::before{
+    font-size: 15px;
+    content: '\e909';
+}
+
+.topbar  .text-muted {
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+
+.navbar-header{
+    height:70px;
+}
+/*导航条*/
+header #nav-tabs ul li a{
+    height:70px;
+    line-height:40px;
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+.icon-logo::before {
+    content: "\e93e";
+}
+/*微调 图标居中*/
+.navbar-brand{
+    position: relative;
+    bottom: 5px;
+}
+
+.icon-icon {
+    color: #E9232C;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.icon-logo {
+    color: #434243;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+
+.navbar-leepom {
+    border-top:none;
+    background-color: #ffffff;
+    border-color: #e7e7e7;
+    margin-bottom: 0;
+    top:0;
+    width: 100%;
+}
+
+/*设置选中标签样式*/
+.navbar-leepom .navbar-nav > .active > a,
+.navbar-leepom .navbar-nav > .active > a:hover,
+.navbar-leepom .navbar-nav > .active > a:focus {
+    color: #424242;
+    background-color: #fff;
+    border-bottom: 2px solid #e9232c;
+}
+/*设置未选中标签的样式*/
+.navbar-leepom .navbar-nav > li > a:hover,
+.navbar-leepom .navbar-nav > li > a:focus {
+    color: #424242;
+    background-color: transparent;
+    border-bottom: 2px solid #e9232c;
+}
+/*导航折叠按钮位置*/
+.navbar-leepom .navbar-header button{
+    position: relative;
+    top: 10px;
+}
+/*/导航栏*/
+
+/*轮播图*/
+@media (min-width: 768px) {
+    #home_slide .item{
+        height: 410px;
+
+    }
+    #home_slide img{
+        display: none;
+    }
+}
+
+#home_slide img{
+    width:100%
+}
+#home_slide .item{
+    background-size: cover;
+    background-position: center center;
+    width:100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* 网站特色 */
+
+.icon-uniE901:before {
+    content: "\e901";
+}
+
+.icon-uniE902:before {
+    content: "\e902";
+}
+
+.icon-uniE903:before {
+    content: "\e903";
+}
+
+.icon-uniE904:before {
+    content: "\e904";
+}
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+.icon-uniE906:before {
+    content: "\e906";
+}
+
+.icon-uniE907:before {
+    content: "\e907";
+}
+#features{
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#features a{
+    color: #333;
+    text-decoration: none;
+}
+
+#features a:hover{
+    color: #FF0000;
+
+}
+#features .media {
+    padding: 10px 0;
+}
+
+#features a i {
+    display: block;
+    font-size: 30px;
+    padding: 10px 0;
+    line-height: 50px;
+}
+#features a .media-right {
+    padding: 5px 0;
+}
+
+/* 立即预约 */
+#booking {
+    border-bottom: 1px solid #e0e0e0;
+}
+#booking p{
+    font-size: 16px;
+    line-height: 65px;
+    height: 65px;
+}
+#booking p i{
+    font-size: 20px;
+
+}
+#booking span{
+    color:#e9232c;
+}
+#booking .immediate-appointment{
+    text-decoration: none;
+    border-bottom: 1px dashed #e9232c;
+}
+#booking .publicity{
+    color: #333;
+    text-decoration: none;
+}
+
+/*
+body{
+    height:2000px;
+}*/
