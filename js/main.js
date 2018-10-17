@@ -5,7 +5,7 @@
 
 $(function(){
 
-
+    $('[data-toggle="tooltip"]').tooltip();
     /**/
     function resize(){
         var isLargeScreen = $(window).width() > 768;
@@ -25,11 +25,33 @@ $(function(){
             //console.log($item[i].data('image-large'));
             //$item[0].style.backgroundImage=
         }
+
+        var navWidth = 20;
+        $('#products .nav li').each(function(e){
+            navWidth += $(this).width();
+            //console.log($(this).width());
+        });
+        //console.log(navWidth);
+        if(navWidth > $('.nav-wraper').width()){
+            $('#products .nav').css('width',navWidth);
+
+        }else{
+            $('#products .nav').css('width','auto');
+        }
+
     }
     $(window).on('resize',function(){
         resize();
-        console.log(window.innerWidth);
+        //console.log(window.innerWidth);
     }).trigger('resize');
+
+    $('#news .nav a').click(function(e) {
+        // e.preventDefault();
+        // e.stopPropagation();
+        // 不要阻止默認事件
+        $('.news-title').text($(this).data('title'));
+
+    });
 
 
 });

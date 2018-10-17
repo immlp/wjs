@@ -210,7 +210,7 @@ header #nav-tabs ul li a{
 #booking p{
     font-size: 16px;
     line-height: 65px;
-    height: 65px;
+
 }
 #booking p i{
     font-size: 20px;
@@ -228,7 +228,331 @@ header #nav-tabs ul li a{
     text-decoration: none;
 }
 
-/*
-body{
+/* 产品列表 */
+#products {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+/*1.设置内容宽度，2包裹标签的容器设置横向滚动条 */
+#products .nav-wraper{
+    overflow-x: scroll;
+}
+#products .nav-tabs{
+    border-bottom: 1px solid #c0c0c0;
+    padding-left: 20px;
+    font-size: 16px;
+    color:#444;
+}
+
+#products  .nav-tabs  > li > a{
+    color: #444;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+}
+#products  .nav-tabs > .active > a {
+    color: #444;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #e9232c;
+
+}
+#products .tab-content .tab-pane{
+
+    margin-top: 20px;
+
+}
+#products .tab-content .tab-pane{
+
+    margin-top: 20px;
+
+}
+.panel-product {
+    border-color: #fff;
+    border-radius: 0;
+    padding: 0;
+    background-color: #fff;
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 5px #c0c0c0;
+    color: #555;
+}
+.panel-product.state-1,.panel-product.state-2,.panel-product.state-3,.panel-product.state-4{
+    background-color: #E0E0E0;
+
+}
+.panel-product.state-1::after{
+    content: "\e925";
+}
+.panel-product.state-2::after{
+    content: "\e926";
+}
+.panel-product.state-3::after{
+    content: "\e927";
+}
+.panel-product.state-4::after{
+    content: "\e928";
+}
+
+.panel-product.state-1::after,
+.panel-product.state-2::after,
+.panel-product.state-3::after,
+.panel-product.state-4::after {
+    font-family: leepom;
+    font-size: 100px;
+    color: #e9232c;
+    position: absolute;
+    top: 10px;
+    right: 108px;
+}
+#products .tab-content .panel-product.active{
+
+    background-color: #e9232c;
+    border-color: #e9232c;
+    color: #fff;
+}
+.panel-product .panel-body h5{
+    font-size:16px;
+    margin: 0 0 10px 0;
+}
+.panel-product .panel-body dt{
+    font-size:10px;
+    color:#c0c0c0;
+
+}
+
+.panel-product .panel-body dd{
+    font-size:16px;
+    margin-bottom: 5px;
+
+}
+
+
+.panel-product.active .panel-body::before{
+    content:'\e915';
+    font-family:'leepom';
+    font-size: 32px;
+    top: -6px;
+    position: absolute;
+    left: 15px;
+}
+#products .tab-content .tab-pane .panel-heading{
+    height: 150px;
+    width: 100px;
+    float: right;
+
+}
+#products .tab-content .tab-pane .panel-body{
+    height: 150px;
+    margin-right:100px;
+    border-right:1px dashed #c0c0c0;
+}
+.panel-product .panel-heading{
+    position: relative;
+}
+.panel-product .panel-heading::before{
+    content: ' ';
+    background-color: #f0f0f0;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
+.panel-product .panel-heading::after{
+    content: ' ';
+    background-color: #f0f0f0;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+}
+.panel-product .panel-heading dd{
+    font-size: 50px;
+    color: #e9232c;
+    top: 36px;
+    right: 30px;
+    position: absolute;
+}
+.panel-product .panel-heading dd sub{
+    font-size: 10px;
+
+}
+.panel-product .panel-heading dt{
+    position: absolute;
+    top: 105px;
+    right: 35px;
+    font-size: 10px;
+}
+.panel-product.active .panel-heading dd {
+
+    color: #ffffff;
+
+}
+.panel-product .panel-heading span{
+    border: 1px solid;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top:15px;
+}
+.panel-product .panel-heading span.primary{
+    color: #e9232c;
+    border-color: #e9232c;
+}
+.panel-product .panel-heading span.secondary{
+    color: #399;
+    border-color: #399;
+}
+/* 新闻 */
+#news {
+    padding: 50px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+#news .line {
+    height: 100%;
+    border-left: 1px dashed #c0c0c0;
+    position: absolute;
+    top: 0;
+    left: 55%;
+    z-index: -1;
+}
+#news .news-title {
+    border-bottom: 1px dashed #c0c0c0;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0 15px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#news .news-title::before{
+    position: absolute;
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    bottom: -5px;
+    right: -5px;
+}
+#news .icon-news01::before{
+    content: "\e90e";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+#news .icon-news02::before{
+    content: "\e90f";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+#news .icon-news03::before{
+    content: "\e910";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+#news .icon-news066::before{
+    content: "\e911";
+    font-size: 28px;
+    color: #EAEAEA;
+}
+#news .nav-pills > li >a {
+    background-color: #c0c0c0;
+}
+#news .nav-pills > li > a:hover,
+#news .nav-pills > li.active > a,
+#news .nav-pills > li.active > a:hover,
+#news .nav-pills > li.active > a:focus {
+    background-color: #e9232c;
+}
+
+
+#news .nav-pills > li > a {
+    display: block;
+    width: 60px;
+    height:60px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#news .tab-pane ul {
+    list-style: none;
+    font-size: 14px;
+    line-height: 3;
+    padding: 0;
+}
+
+@media (max-width: 1000px) {
+    ul.nav.nav-pills.nav-stacked li {
+        float: left;
+    }
+}
+
+/* 合作伙伴 */
+.partner-list {
+    list-style: none;
+
+    padding: 50px 0;
+    font-size:0;
+}
+.partner-list li{
+    display: inline-block;
+    width: calc(100% / 9);
+    font-size: 50px;
+}
+
+.partner-list li a{
+    color: #999;
+}
+.partner-list > li > a:hover {
+    text-decoration: none;
+}
+.partner-list > li + li {
+    border-left: 1px dashed #c0c0c0;
+    color: #ddd;
+}
+
+.icon-uniE930:before {
+    content: "\e930";
+}
+.icon-uniE930:hover {
+    color: #df3232;
+}
+.icon-uniE92F:before {
+    content: "\e92F";
+}
+.icon-uniE92E:before {
+    content: "\e92E";
+}
+.icon-uniE92A:before {
+    content: "\e92A";
+}
+.icon-uniE929:before {
+    content: "\e92E";
+}
+.icon-uniE931:before {
+    content: "\e931";
+}
+.icon-uniE92C:before {
+    content: "\e92C";
+}
+.icon-uniE92B:before {
+    content: "\e92B";
+}
+.icon-uniE92D:before {
+    content: "\e92D";
+}
+
+
+/*body{
     height:2000px;
 }*/
+

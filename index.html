@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>微金所</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -29,13 +30,13 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <a href="#" class="btn btn-danger btn-sm">免费注册</a>
-                    <a href="#" class="text-muted" class="btn btn-link btn-sm">登录</a>
+                    <a href="#" class="text-muted" class="btn btn-link btn-sm" data-toggle="modal" data-target=".modal">登录</a>
                 </div>
 
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-default navbar-leepom navbar-static-top" data-spy="affix" data-offset-top="20" data-offset-bottom="300">
+    <nav class="navbar navbar-default navbar-leepom navbar-static-top" data-spy="affix" data-offset-top="200">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -87,7 +88,6 @@
         </div>
         <div class="item" data-image-large="img/slide_03_2000x410.jpg"
              data-image-small="img/slide_01_640x340.jpg">
-
         </div>
         <div class="item" data-image-large="img/slide_04_2000x410.jpg"
              data-image-small="img/slide_01_640x340.jpg">
@@ -196,21 +196,1356 @@
 <!-- 立即预约 -->
 <section id="booking">
     <div class="container">
-        <p class="pull-left">
-            <i class="icon-uniE906"></i>
-            现在有<span>556</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <a href="#" class="immediate-appointment"><span>立即预约</span></a>
-        </p>
-        <p class="pull-right visible-lg-inline visible-md-inline">
-            <i class="icon-uniE905"></i>
-            <a  class="publicity" href="#">微金所企业宣传片</a>
-        </p>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <p class="pull-left">
+                    <i class="icon-uniE906"></i>
+                    现在有<span>556</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <a href="#"
+                                                                                    class="immediate-appointment"><span>立即预约</span></a>
+                </p>
+                <p class="pull-right visible-lg-inline visible-md-inline">
+                    <i class="icon-uniE905"></i>
+                    <a class="publicity" href="#">微金所企业宣传片</a>
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
 <!-- /立即预约 -->
-<!--投资标的-->
-<section></section>
-<section></section>
-<footer></footer>
+<!-- 产品列表 -->
+<section id="products">
+    <div class="container">
+        <div class="nav-wraper">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#category_01" aria-controls="home" role="tab"
+                                                          data-toggle="tab">特别推荐</a></li>
+                <li role="presentation"><a href="#category_02" aria-controls="category_02" role="tab"
+                                           data-toggle="tab">微投资</a></li>
+                <li role="presentation"><a href="#category_03" aria-controls="category_03" role="tab"
+                                           data-toggle="tab">微小宝</a></li>
+                <li role="presentation"><a href="#category_04" aria-controls="category_04" role="tab"
+                                           data-toggle="tab">微消费</a></li>
+                <li role="presentation"><a href="#category_05" aria-controls="category_05" role="tab"
+                                           data-toggle="tab">微增利</a></li>
+                <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab"
+                                           data-toggle="tab">微金宝</a></li>
+                <li role="presentation"><a href="#category_07" aria-controls="category_07" role="tab"
+                                           data-toggle="tab">微转让</a></li>
+                <li class="hidden-sm hidden-xs pull-right"><a href="#" class="">更多</a></li>
+            </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="category_01">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product active">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary" data-toggle="tooltip" data-placement="top"
+                                          title="北京市">京</span>
+                                    <span class="secondary" data-toggle="tooltip" data-placement="top"
+                                          title="实地认证">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-1">
+                                <div class="panel-heading text-center">
+                                    <span class="primary" data-toggle="tooltip" data-placement="top"
+                                          title="北京市">京</span>
+                                    <span class="secondary" data-toggle="tooltip" data-placement="top"
+                                          title="实地认证">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary" data-toggle="tooltip" data-placement="top"
+                                          title="北京市">京</span>
+                                    <span class="secondary" data-toggle="tooltip" data-placement="top"
+                                          title="实地认证">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-3">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="category_02">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product active">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-1">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-3">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="category_03">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-1">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="category_04">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product active">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary" data-toggle="tooltip" data-placement="top"
+                                          title="北京市">京</span>
+                                    <span class="secondary" data-toggle="tooltip" data-placement="top"
+                                          title="实地认证">实</span>
+                                    <dt>年利率</dt>
+                                    <dd><strong>8</strong><sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary" data-toggle="tooltip" data-placement="top"
+                                          title="北京市">京</span>
+                                    <span class="secondary" data-toggle="tooltip" data-placement="top"
+                                          title="实地认证">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-3">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="category_05">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product active">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-3">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="category_06">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product active">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-3">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="category_07">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product active">
+                                <div class="panel-heading text-center">
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product state-2">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="panel-product ">
+                                <div class="panel-heading text-center">
+                                    <span class="primary">京</span>
+                                    <span class="secondary">实</span>
+                                    <dt>年利率</dt>
+                                    <dd>8<sub>%</sub></dd>
+                                </div>
+                                <div class="panel-body">
+                                    <h5>新手体验标0650期</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-left">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                        <div class="col-xs-6 text-right">
+                                            <dt>起投金额</dt>
+                                            <dd>0.01<sub>万</sub></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /产品列表 -->
+<!-- 新闻 -->
+<section id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2">
+                <div class="news-title">全部新聞</div>
+            </div>
+            <div class="col-md-1  center-block">
+                <ul class="nav nav-pills nav-stacked ">
+                    <li role="presentation" class="active"><a data-title="全部新聞" href="#news_01" aria-controls="news_01" role="tab"
+                                                              data-toggle="tab"><i class="icon-news01"></i></a></li>
+                    <li role="presentation" class=""><a data-title="媒体报道" href="#news_02"   aria-controls="news_02" role="tab"
+                                                              data-toggle="tab"><i class="icon-news02"></i></a></li>
+                    <li role="presentation" class=""><a href="#news_03" aria-controls="news_03" role="tab"
+                                                              data-toggle="tab"><i class="icon-news03"></i></a></li>
+                    <li role="presentation" class=""><a href="#news_066" aria-controls="news_066" role="tab"
+                                                                              data-toggle="tab"><i class="icon-news066"></i></a></li>
+
+                </ul>
+                <i class="line hidden-sm hidden-xs"></i>
+            </div>
+            <div class="col-md-7">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="news_01">
+                        <ul>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news_02">
+                        <ul>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                            <li>【微还款】2015年12月10日共23个项目按时完成全部还款</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /新闻 -->
+<footer id="partner" class="hidden-xs">
+    <div class="container">
+        <h3 class="text-center">合作伙伴</h3>
+        <div class="text-center">
+            <ul class="partner-list">
+                <li><a href="#" class="icon-uniE930"></a></li><li><a href="#" class="icon-uniE92F"></a></li><li><a href="#" class="icon-uniE92E"></a></li><li><a href="#" class="icon-uniE92A"></a></li><li><a href="#" class="icon-uniE929"></a></li><li><a href="#" class="icon-uniE931"></a></li><li><a href="#" class="icon-uniE92C"></a></li><li><a href="#" class="icon-uniE92B"></a></li><li><a href="#" class="icon-uniE92D"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">欢迎登录</h4>
+            </div>
+            <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="js/main.js"></script>
