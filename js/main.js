@@ -54,4 +54,35 @@ $(function(){
     });
 
 
+    //检测滑动事件，轮播图滑动
+    var startX;
+    var endX;
+    var offset=20;
+    $('.carousel').on('touchstart', function (e){
+
+        startX = e.originalEvent.touches[0].clientX;
+        endX = startX;
+    });
+    //获取移动时的坐标
+    $('.carousel').on('touchmove', function (e){
+        //console.log(e.originalEvent.touches[0].clientX);
+        endX = e.originalEvent.touches[0].clientX;
+    });
+
+    $('.carousel').on('touchend', function (e){
+        console.log(startX);
+        console.log(endX);
+        var distance = Math.abs( endX-startX);
+        if(distance>offset){
+            console.log(endX > startX? '->':'<-');
+            if(endX>startX){
+                $('.carousel').carousel('prev');
+            }else{
+                $('.carousel').carousel('next');
+            }
+        }
+
+    });
+
+
 });
